@@ -1,14 +1,9 @@
 # Shhh11
-Windows Privacy Script
-Overview
+WARNING: This script makes system-level changes to Windows. It can disable services, modify privacy settings, and remove built-in applications. Read the full description before using.
+Recovery
 
-A Windows privacy and system optimization script designed to reduce telemetry, disable unnecessary background services, remove bundled applications, modify privacy settings, and improve user control over Windows features.
-
-The script creates registry backups before applying changes.
-
-Features
-Registry Backup
-
+Before applying changes, the script creates registry backups.
+These backups can be used to restore registry settings.
 Creates backups of:
 
 HKEY_CURRENT_USER
@@ -166,13 +161,12 @@ Used to block connections to selected tracking and diagnostic endpoints.
 
 Security Feature Configuration
 
-Changes Microsoft security-related settings:
+Microsoft Defender Configuration
 
-SmartScreen configuration
-Defender cloud reporting settings
+Modifies Defender policies including:
+Cloud protection settings
 Sample submission settings
-Defender monitoring policies
-Application Removal
+Monitoring policies
 
 Removes selected built-in Windows applications:
 
@@ -190,9 +184,8 @@ Supported System
 
 Designed for:
 
-Windows 10
-Windows 11
-Administrator privileges required potentially system privileges via PSTOOLS
+Windows 11/10
+Administrator privileges required
 Windows operating system
 Main Components
 Registry modification
